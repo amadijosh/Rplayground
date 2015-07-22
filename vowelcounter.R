@@ -4,6 +4,7 @@ countVowels = function(val){
   val = tolower(strsplit(val,"")[[1]])
   vowelcount = val[val %in% vowels]
   vowelcount = table(vowelcount)
+  vowelcount = sum(vowelcount)
   return(vowelcount)
 }
 
